@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- лучше сразу ставить RelativeLayout в основном окне, т.к. оно корректнее работает -->
+<!-- изначально будет стоять что-то другое, нужно просто стереть и прописать RelativeLayout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- EditText нужен для ввода текста, любые элементы лучше редактировать сразу же здесь в документе -->
+    <!-- строчка (ОБЯЗАТЕЛЬНА) android:id="@+id/сюда писать любое удобное название"
+    присваивает айди элементу для того, чтобы позже использовать его в коде java (MainActivity.java) -->
+    <!-- android:inputType позволяет выбрать что можно вводить, если нужно только цифры = number, если только буквы = text -->
+    <!-- android:layout_centerHorizontal - выравнивание элемента по горизонтали, можно также поставить по вертикали -->
+    <!-- android:padding - размер элемента -->
+    <!-- android:hint - текст элемента -->
+    <!-- android:textColorHint - выбор цвета для текста -->
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:hint="kapopa"/>
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="kapopa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="aboba"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edittext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="aboba"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="knopka"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="перейти на второе окно"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/white"
+        />
+</RelativeLayout>
